@@ -14,14 +14,14 @@ let prezzoFinale = document.getElementById("prezzoFinale");
 if (etaUtente < 18) {
 
     scontoMinori = (prezzoViaggio * (20 / 100))
-    prezzoFinale.innerHTML = (Math.round((prezzoViaggio - scontoMinori) * 100) / 100).toFixed(2);
+    prezzoFinale.innerHTML = "prezzo:" + (Math.round((prezzoViaggio - scontoMinori) * 100) / 100).toFixed(2);
 
 } else if (etaUtente > 65) {
 
     scontoAnziani = (prezzoViaggio * (40 / 100))
-    prezzoFinale.innerHTML = (Math.round((prezzoViaggio - scontoAnziani) * 100) / 100).toFixed(2);
+    prezzoFinale.innerHTML = "prezzo:" + (Math.round((prezzoViaggio - scontoAnziani) * 100) / 100).toFixed(2);
 }
 
 else {
-    prezzoFinale.innerHTML = (Math.round(prezzoViaggio * 100) / 100).toFixed(2);
+    prezzoFinale.innerHTML = "prezzo:" + (Math.round(prezzoViaggio * 100) / 100).toFixed(2);
 }
