@@ -1,5 +1,5 @@
 const kmDaPercorrere = prompt("quanti km devi fare?");
-const etaUtente = prompt("quanti hanni hai?");
+const etaUtente = prompt("quanti anni hai?");
 const prezzoKm = 0.21;
 let prezzoViaggio = kmDaPercorrere * prezzoKm;
 
